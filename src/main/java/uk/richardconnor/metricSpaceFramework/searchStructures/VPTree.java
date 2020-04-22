@@ -303,7 +303,6 @@ public class VPTree<T> extends SearchIndex<T> {
      *
      * @param from
      * @param to
-     * @param medianPos
      */
     protected void quickSort(int from, int to) {
 

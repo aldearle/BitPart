@@ -66,8 +66,7 @@ public class DistanceHistogram {
     /**
      * Sort the pivot-data distances
      * Then divide into BUCKET_COUNT buckets
-     * The calculate the gradient of ln(distance) against count( points < d )
-     * @return return the average averageIDIM for this collection
+     * The calculate the gradient of ln(distance) against count( points &lt; d )
      */
     public void setMeasures() {
 
