@@ -1,4 +1,4 @@
-package uk.ac.standrews.cs.utilities.metrics.coreConcepts.searchStructures;
+package uk.richardconnor.metricSpaceFramework;
 
 import java.util.Random;
 
