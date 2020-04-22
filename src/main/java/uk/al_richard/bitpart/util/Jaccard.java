@@ -16,7 +16,8 @@
  */
 package uk.al_richard.bitpart.util;
 
-import coreConcepts.Metric;
+
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
 
 import java.util.*;
 
@@ -58,7 +59,6 @@ public class Jaccard implements Metric<String> {
     public String getMetricName() {
         return "Jaccard";
     }
-
 
     public static Set union(Collection a, Collection b) {
         Set result = new HashSet();

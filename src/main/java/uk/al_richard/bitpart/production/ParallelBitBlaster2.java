@@ -1,10 +1,10 @@
 package uk.al_richard.bitpart.production;
 
-import coreConcepts.CountedMetric;
-import coreConcepts.Metric;
-import uk.ac.standrews.cs.utilities.metrics.coreConcepts.DataDistance;
-import uk.al_richard.bitpart.referenceImplementation.*;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.CountedMetric;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.DataDistance;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
 import uk.al_richard.bitpart.mutiThreaded.BlockSlice;
+import uk.al_richard.bitpart.referenceImplementation.*;
 
 import java.util.ArrayList;
 import java.util.List;

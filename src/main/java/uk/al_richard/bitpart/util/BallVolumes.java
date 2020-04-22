@@ -1,10 +1,10 @@
 package uk.al_richard.bitpart.util;
 
-import coreConcepts.Metric;
-import dataPoints.cartesian.CartesianPoint;
-import dataPoints.cartesian.Euclidean;
-import testloads.CartesianThresholds;
-import testloads.TestLoad;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
+import uk.richardconnor.metricSpaceFramework.datapoints.CartesianPoint;
+import uk.richardconnor.metricSpaceFramework.datapoints.cartesian.Euclidean;
+import uk.richardconnor.metricSpaceFramework.testloads.CartesianThresholds;
+import uk.richardconnor.metricSpaceFramework.testloads.TestLoad;
 
 import java.util.List;
 

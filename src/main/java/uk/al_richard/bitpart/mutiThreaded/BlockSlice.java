@@ -1,8 +1,8 @@
 package uk.al_richard.bitpart.mutiThreaded;
 
-import coreConcepts.CountedMetric;
-import coreConcepts.Metric;
-import uk.ac.standrews.cs.utilities.metrics.coreConcepts.DataDistance;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.CountedMetric;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.DataDistance;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
 import uk.al_richard.bitpart.referenceImplementation.ExclusionZone;
 import uk.al_richard.bitpart.referenceImplementation.RefPointSet;
 

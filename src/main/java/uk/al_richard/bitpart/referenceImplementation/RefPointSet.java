@@ -1,9 +1,9 @@
 package uk.al_richard.bitpart.referenceImplementation;
 
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
+
 import java.util.Collection;
 import java.util.List;
-
-import coreConcepts.Metric;
 
 public class RefPointSet<T> {
 

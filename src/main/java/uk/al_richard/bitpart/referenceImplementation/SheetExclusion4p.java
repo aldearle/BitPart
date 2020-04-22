@@ -1,8 +1,8 @@
 package uk.al_richard.bitpart.referenceImplementation;
 
 import org.apache.commons.math3.stat.regression.SimpleRegression;
-import searchStructures.ObjectWithDistance;
-import searchStructures.Quicksort;
+import uk.richardconnor.metricSpaceFramework.ObjectWithDistance;
+import uk.richardconnor.metricSpaceFramework.Quicksort;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -17,7 +17,8 @@
 
 package uk.al_richard.bitpart.util;
 
-import coreConcepts.Metric;
+
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
 
 import java.util.BitSet;
 

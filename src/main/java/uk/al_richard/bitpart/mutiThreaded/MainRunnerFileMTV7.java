@@ -1,12 +1,11 @@
 package uk.al_richard.bitpart.mutiThreaded;
 
-import coreConcepts.CountedMetric;
-import coreConcepts.Metric;
-import dataPoints.cartesian.CartesianPoint;
-import testloads.TestContext;
-import testloads.TestContext.Context;
 import uk.al_richard.bitpart.referenceImplementation.ExclusionZone;
 import uk.al_richard.bitpart.referenceImplementation.RefPointSet;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.CountedMetric;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
+import uk.richardconnor.metricSpaceFramework.datapoints.CartesianPoint;
+import uk.richardconnor.metricSpaceFramework.testloads.TestContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,7 @@ public class MainRunnerFileMTV7 extends MainRunnerFile {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException, Exception {
 
-        Context context = Context.euc20;
+        TestContext.Context context = TestContext.Context.euc20;
 
         int noOfRefPoints = 50;
         int nChoose2 = ((noOfRefPoints - 1) * noOfRefPoints) / 2;
@@ -40,7 +39,7 @@ public class MainRunnerFileMTV7 extends MainRunnerFile {
             System.out.println("Error initialising TestContext");
             System.exit(-1);
         }
-        int querySize = (context == Context.colors || context == Context.nasa) ? tc
+        int querySize = (context == TestContext.Context.colors || context == TestContext.Context.nasa) ? tc
                 .dataSize() / 10 : 1000;
         tc.setSizes(querySize, noOfRefPoints);
         List<CartesianPoint> data = tc.getData();

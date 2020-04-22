@@ -1,8 +1,9 @@
 package uk.al_richard.bitpart.production;
 
-import coreConcepts.CountedMetric;
-import coreConcepts.Metric;
-import uk.ac.standrews.cs.utilities.metrics.coreConcepts.DataDistance;
+
+import uk.richardconnor.metricSpaceFramework.coreConcepts.CountedMetric;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.DataDistance;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
 import uk.al_richard.bitpart.referenceImplementation.*;
 import uk.al_richard.bitpart.util.OpenBitSet;
 

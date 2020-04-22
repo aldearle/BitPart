@@ -1,7 +1,8 @@
 package uk.al_richard.bitpart.referenceImplementation;
 
-import searchStructures.ObjectWithDistance;
-import searchStructures.Quicksort;
+
+import uk.richardconnor.metricSpaceFramework.ObjectWithDistance;
+import uk.richardconnor.metricSpaceFramework.Quicksort;
 
 import java.util.List;
 import java.util.Objects;

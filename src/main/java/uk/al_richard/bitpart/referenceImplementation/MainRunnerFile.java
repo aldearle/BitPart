@@ -1,11 +1,9 @@
 package uk.al_richard.bitpart.referenceImplementation;
 
-import coreConcepts.CountedMetric;
-import coreConcepts.Metric;
-import dataPoints.cartesian.CartesianPoint;
-import searchStructures.VPTree;
-import testloads.TestContext;
-import testloads.TestContext.Context;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.CountedMetric;
+import uk.richardconnor.metricSpaceFramework.coreConcepts.Metric;
+import uk.richardconnor.metricSpaceFramework.datapoints.CartesianPoint;
+import uk.richardconnor.metricSpaceFramework.testloads.TestContext;
 
 import java.util.*;
 
@@ -21,7 +19,7 @@ public class MainRunnerFile {
 
 	public static void main(String[] args) throws Exception {
 
-		Context context = Context.euc20;
+		TestContext.Context context = TestContext.Context.euc20;
 
 		boolean fourPoint = true;
 		boolean balanced = false;
@@ -32,7 +30,7 @@ public class MainRunnerFile {
 		int noOfBitSets = nChoose2 + (noOfRefPoints * ball_radii.length);
 
 		TestContext tc = new TestContext(context);
-		int querySize = (context == Context.colors || context == Context.nasa) ? tc.dataSize() / 10 : 1000;
+		int querySize = (context == TestContext.Context.colors || context == TestContext.Context.nasa) ? tc.dataSize() / 10 : 1000;
 		tc.setSizes(querySize, noOfRefPoints);
 		List<CartesianPoint> dat = tc.getData();
 
@@ -115,31 +113,6 @@ public class MainRunnerFile {
 			}
 		}
 		return res;
-	}
-
-	@SuppressWarnings("unused")
-	private static void buildAndQueryVpt(TestContext tc) {
-
-		List<CartesianPoint> data = tc.getData();
-		data.addAll(tc.getRefPoints());
-
-		CountedMetric<CartesianPoint> cm = new CountedMetric<>(tc.metric());
-		VPTree<CartesianPoint> vpt = new VPTree<>(data, cm);
-		cm.reset();
-		final List<CartesianPoint> queries = tc.getQueries();
-		final double t = tc.getThreshold();
-
-		long t0 = System.currentTimeMillis();
-		int noOfRes = 0;
-		for (CartesianPoint q : queries) {
-			List<CartesianPoint> res = vpt.thresholdSearch(q, t);
-			noOfRes += res.size();
-		}
-
-		System.out.println("vpt");
-		System.out.println("dists per query\t" + cm.reset() / queries.size());
-		System.out.println("results\t" + noOfRes);
-		System.out.println("time\t" + (System.currentTimeMillis() - t0) / (float) queries.size());
 	}
 
 	public static <T> void buildBitSetData(List<T> data, BitSet[] datarep, RefPointSet<T> rps,
@@ -233,7 +206,7 @@ public class MainRunnerFile {
 	}
 
 	static <T> void queryBitSetData(List<T> queries, List<T> dat, Metric<T> metric, double threshold, BitSet[] datarep,
-			RefPointSet<T> rps, List<ExclusionZone<T>> ezs, int noOfRefPoints) {
+									RefPointSet<T> rps, List<ExclusionZone<T>> ezs, int noOfRefPoints) {
 
 		int noOfResults = 0;
 		int partitionsExcluded = 0;
