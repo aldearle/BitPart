@@ -11,6 +11,6 @@ This repo contains the reference implementation of BitPart, a novel exact search
 <dependency>
     <groupId>com.github.aldearle</groupId>
     <artifactId>bitpart</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
