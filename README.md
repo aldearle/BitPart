@@ -1,29 +1,16 @@
-# README #
+# BitPart
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repo contains the reference implementation of BitPart, a novel exact search mechanism intended for use in high-dimensional spaces.
 
-### What is this repository for? ###
+![Java CI with Maven](https://github.com/aldearle/bitpart/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![javadoc](https://javadoc.io/badge2/com.github.aldearle/bitpart/javadoc.svg)](https://javadoc.io/doc/com.github.aldearle/bitpart)
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## Usage via maven
+        
+```
+<dependency>
+    <groupId>com.github.aldearle</groupId>
+    <artifactId>bitpart</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```

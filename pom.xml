@@ -70,7 +70,6 @@
                 </configuration>
             </plugin>
 
-
         </plugins>
 
     </build>
@@ -81,12 +80,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math3</artifactId>
             <version>3.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>12.0.1</version>
         </dependency>
 		
         <dependency>
@@ -167,6 +160,7 @@
                             </execution>
                         </executions>
                     </plugin>
+
                 </plugins>
             </build>
         </profile>
@@ -195,16 +189,5 @@
             </roles>
         </developer>
      </developers>
-
-    <repositories>
-
-        <!-- Repository for metric space framework. -->
-        <repository>
-            <id>uk.ac.standrews.cs.maven.repository</id>
-            <name>School of Computer Science Maven Repository</name>
-            <url>https://maven.cs.st-andrews.ac.uk/</url>
-        </repository>
-
-    </repositories>
 
 </project>
